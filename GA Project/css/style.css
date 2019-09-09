@@ -1,0 +1,354 @@
+/*
+Project Name: Best Cars
+Client: Your Client
+Author: Fahad Aljobaili
+Developer @Fahad JU
+*/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:rgb(150, 150, 147);
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:rgb(150, 150, 147);
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Start Coding*/
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: 'Catamaran'
+}
+
+header {
+  background: #033048;
+  padding: 25px 0;
+  overflow: hidden;
+}
+header .logo {
+  color: #fff;
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 15px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+  font-family: Catamaran;
+}
+header nav ul li a {
+  color:rgb(150, 150, 147);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: rgb(150, 150, 147);
+  border-color: #2e6da400;
+}
+
+/* carousel Photo*/
+.carousel-container, .carousel-item {
+  height: 650px;
+  width: 100%;
+}
+
+.carousel-item-1 {
+  background: url('../images/Audi.jpg') center center;
+  background-size: cover;
+}
+
+.carousel-item-2 {
+  background: url('../images/Chevrolet.jpg') center center;
+  background-size: cover;
+}
+
+.carousel-item-3 {
+  background: url('../images/Kia.jpg') center center;
+  background-size: cover;
+}
+.carousel-item-1 {
+  background: url('../images/Land.jpg') center center;
+  background-size: cover;
+}
+
+/****************
+/* Photo Galary Page Chose Brand
+/*****************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  padding:1px 1px 1px 1px;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+   background-color: #666;
+   color: white;
+  vertical-align: middle;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+   border: 2px solid black;
+  padding: 25px;
+  background: url();
+  background-repeat: no-repeat;
+  background-size: auto;
+   color: black;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+/********************
+/*  END
+/********************
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+
+
+
+.columnPor {
+  display: none;
+  
+}

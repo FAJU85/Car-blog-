@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheets -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Amiri:400,700|Baloo+Chettan|Catamaran:100,200,300,400,500,600,700|Saira+Stencil+One|Tajawal:400,500,700&display=swap');
+  </style>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <title>Best Cars</title>
+
+  <link
+    href='https://fonts.googleapis.com/css?family=Amiri:400,700|Catamaran:100,200,300,400,500,600,700|Tajawal:400,500,700&display=swap'
+    rel='stylesheet' type='text/css'>
+
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<!-- HTML  -->
+
+<!--Nav Bar-->
+
+<body>
+  <div class="nav">
+    <header>
+      <a href="index.html" class="logo">Best Cars</a>
+      <nav>
+        <ul>
+          <li>
+            <button type="button" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-primary">Car galary</button>
+            <button type="button" class="btn btn-primary">Abut us</button>
+            <button type="button" class="btn btn-primary">Contact</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Cars Brand Logo -->
+
+
+  <h2>New Cars</h2>
+
+  <div id="myBtnContainer">
+
+    <button class="btn active" onClick="filterSelection('all')">All
+    </button>
+
+    <!-- first btn -->
+
+    <button class="btn" id="Pro">
+      <backgrund src="./img/Porsche-logo.png" alt="Porsche" class="avatar" width="40px"></backgrund>
+
+    </button>
+    <!-- 2nd btn -->
+    <button class="btn" onclick="filterSelection('cars')">
+      <img src="./img/Nissan-logo.png" alt="Nissan" class="avatar" width="40px">
+
+    </button>
+
+    <!-- 3rd btn -->
+    <button id="BMWbuton" class="btn"  onclick="filterSelection('people')">
+
+      <img src="./img/BMW-logo.png" alt="BMW" class="avatar" width="40px">
+    </button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+
+  <!-- 1st box -->
+  <div class="row">
+    
+    <div class="columnPor">
+      <div class="content">
+        <img src="./img/2020-porsche.jpg" alt="Porsche2020" width="100%">
+
+        <h4>2020 Porsche Taycan</h4>
+        <p>The Stuttgart-based company has said that the Taycan can sprint to 62 miles per hour (100 kilometers per
+          hour) in less than 3.5 seconds, while a 0 to 124 mph (200 kph) run is possible in less than 12 seconds. Top
+          speed? Over 155 mph (250 kph).
+
+          In addition, the lithium-ion battery it carries has a gross capacity of around 90 kWh, which puts it near the
+          battery capacity of the Tesla Model S at 100 kWh. Porsche hasn't disclosed the Taycan's range as of yet, but
+          the company's touting an 800-volt system voltage that "delivers continuous high power and charging capacities
+          to enable both fast driving and fast loading, while also reducing the weight of the high-voltage cabling."
+
+          In retrospect, it has been reported that the Taycan will offer more than 311 miles (500 kilometers) of range
+          in between charges, only needing 15 minutes of charging time to get 248 miles (400 km) of range, courtesy of
+          the 800-volt system.
+
+          A new era for the Porsche brand is indeed near and we'll be in attendance to witness that history. With that
+          said, make sure to keep this site on your bookmarks and follow our social media channels at @motor1com. The
+          livestream event will happen at this exact time: 3 pm (CET) Germany, 9 pm (CST) China and 9 am (UCT-4) Canada.
+
+          Source: Porsche</p>
+
+      </div>
+    </div>
+
+
+     2end box 
+    
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>     3rd box 
+   
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>   cars 
+   1st bo
+
+    <div class="columnGtr">
+      <div class="content">
+        <img src="./img/exterior_01_720x540.jpg" alt="GT-R" width="100%">
+        <h4>The 2020 Nissan GT-R Nismo Costs $212,000
+        </h4>
+        <p>The 2020 Nissan GT-R Nismo Costs $212,000
+        </p>
+      </div>
+    </div>
+
+
+   1st box
+
+    <div class="columnBmw">
+      <div class="content">
+        <img src="./img/BMW 8.jpg" alt="BMW" width="100%">
+        <h4>BMW Unveils Gorgeous 8 Series Gran Coupe!
+
+        </h4>
+        <p>BMW has been on a relentless launch spree ever since the 8 Series nameplate was revived less than a year ago.
+          After chopping off the roof and then giving the enthusiast something to be excited about, the carmaker has now
+          revealed the 8 Series Gran Coupe in all its glory. It will be available in four variants - the 840i, 840i
+          xDrive, 840d xDrive, and MSport M850i xDrive.
+
+        </p>
+      </div>
+    </div>
+
+
+
+
+   END GRID
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
